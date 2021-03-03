@@ -11,4 +11,8 @@ $ django-admin startproject dao
 $ cd dao
 ```
 
-2. 
+2. 初始化一个投票应用
+
+```sh
+python manage.py startapp polls
+```
