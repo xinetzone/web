@@ -16,5 +16,28 @@ $ cd dao
 2. 初始化一个投票应用
 
 ```sh
-python manage.py startapp polls
+$ python manage.py startapp polls
+```
+
+3. 初始化迁移
+
+```sh
+$ python manage.py migrate
+```
+
+4. 修改设定后，再次更新迁移
+    - 编辑 `models.py` 文件，改变模型。
+    - 运行 `python manage.py makemigrations` 为模型的改变生成迁移文件。
+    - 运行 `python manage.py migrate` 来应用数据库迁移。
+
+5. 创建一个管理员账号
+
+```sh
+$ python manage.py createsuperuser
+```
+
+5. 启动服务器
+
+```sh
+$ python manage.py runserver
 ```
